@@ -68,9 +68,27 @@ PRODUCT_PACKAGES += \
     com.qualcomm.location \
     gps.msm8226
 
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/rootdir/system/etc/sec_config:system/etc/sec_config
+
 # Keystore
 PRODUCT_PACKAGES += \
     keystore.msm8226
+
+# NFC packages
+PRODUCT_PACKAGES += \
+    libnfc-nci \
+    libnfc_nci_jni \
+    NfcNci \
+    Tag \
+    com.android.nfc_extras \
+    nfc_nci.msm8226
+
+# NFCEE access control
+NFCEE_ACCESS_PATH := $(COMMON_PATH)/rootdir/system/etc/nfcee_access.xml
+
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/rootdir/system/etc/nfcee_access.xml:system/etc/nfcee_access.xml
 
 # USB
 PRODUCT_PACKAGES += \
