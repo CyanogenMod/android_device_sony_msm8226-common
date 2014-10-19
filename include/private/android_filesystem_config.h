@@ -100,6 +100,7 @@
 #define AID_NET_BT_STACK  3008  /* bluetooth: access config files */
 #define AID_QCOM_ONCRPC   3009  /* can read/write /dev/oncrpc files */
 #define AID_QCOM_DIAG     3010  /* can read/write /dev/diag */
+#define AID_IMS           3011  /* can read/write /dev/socket/imsrtp */
 
 #if defined(MOTOROLA_UIDS)
 #define AID_MOT_OSH       5000  /* OSH */
@@ -190,6 +191,7 @@ static const struct android_id_info android_ids[] = {
     { "net_bw_acct",   AID_NET_BW_ACCT, },
     { "qcom_oncrpc", AID_QCOM_ONCRPC, },
     { "qcom_diag", AID_QCOM_DIAG, },
+    { "ims", AID_IMS, },
     { "net_bt_stack",  AID_NET_BT_STACK, },
 
 // SONY_UIDS
@@ -266,6 +268,9 @@ static const struct fs_path_config android_dirs[] = {
 ** and will allow partial matches.
 */
 static const struct fs_path_config android_files[] = {
+    { 00775, AID_ROOT,      AID_ROOT,      0, "system/b2g/b2g" },
+    { 00775, AID_ROOT,      AID_ROOT,      0, "system/b2g/updater" },
+    { 00775, AID_ROOT,      AID_ROOT,      0, "system/b2g/plugin-container" },
     { 00440, AID_ROOT,      AID_SHELL,     0, "system/etc/init.goldfish.rc" },
     { 00550, AID_ROOT,      AID_SHELL,     0, "system/etc/init.goldfish.sh" },
     { 00440, AID_ROOT,      AID_SHELL,     0, "system/etc/init.trout.rc" },
