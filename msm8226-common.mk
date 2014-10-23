@@ -148,3 +148,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # SIM Props
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.apm_sim_not_pwdn=1 \
+
+# msm8226 common
+$(call inherit-product, vendor/sony/msm8226-common/msm8226-common-vendor.mk)
+
