@@ -113,6 +113,10 @@ NFCEE_ACCESS_PATH := $(COMMON_PATH)/rootdir/system/etc/nfcee_access.xml
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/system/etc/nfcee_access.xml:system/etc/nfcee_access.xml
 
+# Time
+PRODUCT_PACKAGES += \
+    libtime_genoff
+
 # USB
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
