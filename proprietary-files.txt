@@ -1,4 +1,4 @@
-app/com.qualcomm.location.apk
+-app/com.qualcomm.location.apk
 bin/gsiff_daemon
 bin/mm-qcamera-daemon
 lib/libloc_api_v02.so
