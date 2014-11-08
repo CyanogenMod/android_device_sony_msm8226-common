@@ -65,6 +65,10 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     tinymix
 
+# Media
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/media_codecs.xml:system/etc/media_codecs.xml
+
 # Display
 PRODUCT_PACKAGES += \
     hwcomposer.msm8226 \
