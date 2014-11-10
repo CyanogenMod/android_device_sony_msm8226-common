@@ -112,3 +112,5 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
+
+MALLOC_IMPL := dlmalloc
