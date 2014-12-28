@@ -15,9 +15,9 @@
 SOMC_PLATFORM := yukon
 
 DEVICE_PACKAGE_OVERLAYS += \
-    device/sony/yukon/overlay
+    device/sony/msm8226-common/overlay
 
-SONY_ROOT:=device/sony/yukon/rootdir
+SONY_ROOT:=device/sony/msm8226-common/rootdir
 
 PRODUCT_COPY_FILES += \
     $(SONY_ROOT)/ueventd.yukon.rc:root/ueventd.yukon.rc \

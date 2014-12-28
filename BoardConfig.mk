@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_VENDOR_KERNEL_HEADERS := device/sony/yukon/kernel-headers
+PRODUCT_VENDOR_KERNEL_HEADERS := device/sony/msm8226-common/kernel-headers
 
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
@@ -34,7 +34,7 @@ BOARD_RAMDISK_OFFSET     := 0x02000000
 
 BOARD_KERNEL_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DT := true
-BOARD_CUSTOM_BOOTIMG_MK := device/sony/yukon/custombootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/sony/msm8226-common/custombootimg.mk
 
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --dt_dir device/sony/$(TARGET_DEVICE)/dtbs --dt_version 2
@@ -58,7 +58,7 @@ USE_OPENGL_RENDERER := true
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
-BOARD_EGL_CFG := device/sony/yukon/rootdir/system/lib/egl/egl.cfg
+BOARD_EGL_CFG := device/sony/msm8226-common/rootdir/system/lib/egl/egl.cfg
 
 BOARD_USES_GENERIC_AUDIO := false
 BOARD_USES_ALSA_AUDIO := true
@@ -85,7 +85,7 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # BT definitions for Qualcomm solution
 BLUETOOTH_HCI_USE_MCT := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/yukon/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/msm8226-common/bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 
@@ -96,7 +96,7 @@ TARGET_NO_RPC := true
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
-TARGET_SYSTEM_PROP := device/sony/yukon/system.prop
+TARGET_SYSTEM_PROP := device/sony/msm8226-common/system.prop
 
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
