@@ -124,9 +124,6 @@ PRODUCT_PACKAGES += \
     ta_qmi_service \
     ta2bin
 
-PRODUCT_PACKAGES += \
-    rmt_storage
-
 #OSS
 PRODUCT_PACKAGES += \
     thermanager \
@@ -152,6 +149,10 @@ PRODUCT_PACKAGES += \
 # Filesystem management tools
 PRODUCT_PACKAGES += \
     e2fsck
+
+# Extract recovery ramdisks
+PRODUCT_PACKAGES += \
+    extract_elf_ramdisk
 
 # Platform specific properties
 #
