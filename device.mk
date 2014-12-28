@@ -139,13 +139,6 @@ PRODUCT_PACKAGES += \
     librs_jni \
     com.android.future.usb.accessory
 
-PRODUCT_PACKAGES += \
-    Dialer \
-    Email \
-    Exchange2 \
-    InCallUI \
-    Launcher3
-
 # Filesystem management tools
 PRODUCT_PACKAGES += \
     e2fsck
@@ -155,11 +148,6 @@ PRODUCT_PACKAGES += \
     extract_elf_ramdisk
 
 # Platform specific properties
-#
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qualcomm.bt.hci_transport=smd
-
-# Get the long list of apns
-PRODUCT_COPY_FILES += device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml
-
 
