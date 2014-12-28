@@ -308,6 +308,11 @@ service sct_service /system/bin/sct_service
     user root
     class main
 
+#QCOM prop
+service mpdecision /system/bin/mpdecision --no_sleep --avg_comp
+   user root
+   disabled
+
 #Camera
 service qcamerasvr /system/bin/mm-qcamera-daemon
     class late_start

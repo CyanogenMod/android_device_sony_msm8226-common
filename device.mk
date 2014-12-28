@@ -96,6 +96,10 @@ PRODUCT_PACKAGES += \
     NfcNci \
     Tag
 
+# Power
+PRODUCT_PACKAGES += \
+    power.yukon
+
 #GPS
 PRODUCT_PACKAGES += \
     libloc_api_v02 \

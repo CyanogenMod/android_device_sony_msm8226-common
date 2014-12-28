@@ -95,6 +95,10 @@ TARGET_NO_RPC := true
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
+# Power definitions for Qualcomm solution
+TARGET_POWERHAL_VARIANT := qcom
+CM_POWERHAL_EXTENSION := yukon
+
 TARGET_SYSTEM_PROP := device/sony/msm8226-common/system.prop
 
 # Include an expanded selection of fonts
