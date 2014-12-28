@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+include device/sony/common/BoardConfigCommon.mk
+
 PRODUCT_VENDOR_KERNEL_HEADERS := device/sony/msm8226-common/kernel-headers
 
 TARGET_ARCH := arm
