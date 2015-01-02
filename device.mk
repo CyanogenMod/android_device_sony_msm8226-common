@@ -121,6 +121,21 @@ PRODUCT_PACKAGES += \
     nfc_nci.pn54x.default
 
 
+# Omx
+PRODUCT_PACKAGES += \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxCore \
+    libOmxEvrcEnc \
+    libOmxQcelp13Enc \
+    libOmxVdec \
+    libOmxVenc \
+    libc2dcolorconvert \
+    libdashplayer \
+    libdivxdrmdecrypt \
+    libmm-omxcore \
+    libstagefrighthw
+
 # Power
 PRODUCT_PACKAGES += \
     power.yukon
