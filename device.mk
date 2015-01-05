@@ -112,10 +112,18 @@ PRODUCT_PACKAGES += \
 
 #Wifi
 PRODUCT_PACKAGES += \
+    libQWiFiSoftApCfg \
+    libqsap_sdk \
     hostapd \
     libwpa_client \
     wpa_supplicant \
     wpa_supplicant.conf
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    wlan.driver.ath=0
+
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/rootdir/system/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf
 
 #Misc
 PRODUCT_PACKAGES += \
