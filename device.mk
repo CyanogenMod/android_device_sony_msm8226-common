@@ -123,7 +123,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     wlan.driver.ath=0
 
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/rootdir/system/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf
+    $(SONY_ROOT)/system/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf
 
 #Misc
 PRODUCT_PACKAGES += \
