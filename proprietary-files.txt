@@ -29,7 +29,6 @@ etc/firmware/leia_pm4_470.fw
 etc/firmware/wlan/prima/WCNSS_cfg.dat
 etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini
 etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
-lib/hw/copybit.msm8226.so
 lib/libidd.so
 lib/libkeyctrl.so
 lib/libmiscta.so
