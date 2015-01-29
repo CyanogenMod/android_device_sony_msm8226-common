@@ -415,9 +415,9 @@ service fm_dl /system/bin/sh /system/etc/init.qcom.fm.sh
 
 #BT service
 service hciattach /system/bin/sh /system/etc/init.yukon.bt.sh
-    class late_start
+    class main
     user bluetooth
-    group qcom_oncrpc bluetooth net_bt_admin system
+    group bluetooth system
     disabled
     oneshot
 
