@@ -64,10 +64,6 @@ BOARD_EGL_CFG := device/sony/msm8226-common/rootdir/system/lib/egl/egl.cfg
 
 BOARD_USES_QCOM_HARDWARE := true
 
-# RIL
-BOARD_PROVIDES_LIBRIL := true
-
-# Audio
 BOARD_USES_GENERIC_AUDIO := false
 BOARD_USES_ALSA_AUDIO := true
 
