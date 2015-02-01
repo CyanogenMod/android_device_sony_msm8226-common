@@ -14,8 +14,6 @@
 
 include device/sony/common/BoardConfigCommon.mk
 
-PRODUCT_VENDOR_KERNEL_HEADERS := device/sony/msm8226-common/kernel-headers
-
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_BOARD_PLATFORM := msm8226
