@@ -117,6 +117,9 @@ EXTENDED_FONT_FOOTPRINT := true
 # Lights HAL
 TARGET_PROVIDES_LIBLIGHT := true
 
+# CM Hardware
+BOARD_HARDWARE_CLASS += device/sony/msm8226-common/cmhw
+
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 
