@@ -71,8 +71,6 @@ vendor/lib/libgsl.so
 vendor/lib/libidl.so
 vendor/lib/libloc_api_v02.so
 vendor/lib/libloc_ds_api.so
-vendor/lib/libmm-abl-oem.so
-vendor/lib/libmm-abl.so
 vendor/lib/libmm-color-convertor.so
 vendor/lib/libnetmgr.so
 vendor/lib/libOpenCL.so
