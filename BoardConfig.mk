@@ -113,3 +113,6 @@ TARGET_SYSTEM_PROP := device/sony/msm8226-common/system.prop
 
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
+
+# Lights HAL
+TARGET_PROVIDES_LIBLIGHT := true
