@@ -5,7 +5,7 @@ $(uncompressed_ramdisk): $(INSTALLED_RAMDISK_TARGET)
 	zcat $< > $@
 
 INITSH := device/sony/msm8226-common/boot/init.sh
-BOOTREC_DEVICE := device/sony/msm8226-common/boot/bootrec-device
+BOOTREC_DEVICE := device/sony/$(TARGET_DEVICE)/bootrec-device
 
 ## Build and run dtbtool
 DTBTOOL := $(HOST_OUT_EXECUTABLES)/dtbToolCM$(HOST_EXECUTABLE_SUFFIX)
