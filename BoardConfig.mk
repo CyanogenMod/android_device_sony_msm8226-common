@@ -116,3 +116,20 @@ EXTENDED_FONT_FOOTPRINT := true
 
 # Lights HAL
 TARGET_PROVIDES_LIBLIGHT := true
+
+# SELinux
+include device/qcom/sepolicy/sepolicy.mk
+
+BOARD_SEPOLICY_DIRS += \
+    device/sony/msm8226-common/sepolicy
+
+BOARD_SEPOLICY_UNION += \
+    device.te \
+    file.te \
+    mpdecision.te \
+    sct.te \
+    sensors.te \
+    tad.te \
+    ta_qmi.te \
+    thermanager.te \
+    file_contexts
