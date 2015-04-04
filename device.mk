@@ -109,6 +109,25 @@ PRODUCT_PACKAGES += \
     libqdutils \
     libqdMetaData
 
+PRODUCT_PACKAGES += \
+    libion
+
+#OMX
+PRODUCT_PACKAGES += \
+    libc2dcolorconvert \
+    libdashplayer \
+    libdivxdrmdecrypt \
+    libstagefrighthw \
+    libOmxCore \
+    libmm-omxcore \
+    libOmxVdec \
+    libOmxVdecHevc \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxEvrcEnc \
+    libOmxQcelp13Enc \
+    libOmxVenc
+
 #lights
 PRODUCT_PACKAGES += \
     lights.yukon
@@ -119,22 +138,6 @@ PRODUCT_PACKAGES += \
     NfcNci \
     Tag \
     nfc_nci.pn54x.default
-
-
-# Omx
-PRODUCT_PACKAGES += \
-    libOmxAacEnc \
-    libOmxAmrEnc \
-    libOmxCore \
-    libOmxEvrcEnc \
-    libOmxQcelp13Enc \
-    libOmxVdec \
-    libOmxVenc \
-    libc2dcolorconvert \
-    libdashplayer \
-    libdivxdrmdecrypt \
-    libmm-omxcore \
-    libstagefrighthw
 
 # Power
 PRODUCT_PACKAGES += \
@@ -172,6 +175,9 @@ PRODUCT_PACKAGES += \
     ta_qmi_service \
     ta2bin
 
+PRODUCT_PACKAGES += \
+    rmt_storage
+
 #OSS
 PRODUCT_PACKAGES += \
     thermanager \
@@ -194,13 +200,19 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     extract_elf_ramdisk
 
-# Set default USB interface
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp
+# Platform specific tags
+#
+PRODUCT_TAGS += dalvik.gc.type-precise
 
 # Platform specific properties
+#
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qualcomm.bt.hci_transport=smd
+
+# Platform specific default properties
+#
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp
 
 # QC Perf
 PRODUCT_PROPERTY_OVERRIDES += \
